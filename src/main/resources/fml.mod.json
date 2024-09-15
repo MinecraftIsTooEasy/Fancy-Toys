@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "fancy_toys",
+  "version": "0.4.0",
+  "depends": {
+    "fishmodloader": ">=3.2.2",
+    "many-lib": ">=2.2.0"
+  },
+  "environment": "client",
+  "name": "Fancy Toys",
+  "description": "花哨,但不一定实用",
+  "icon": "fancy_toys_icon.png",
+  "authors": [
+    "Xy_Lose"
+  ],
+  "entrypoints": {
+    "main": [
+      "moddedmite.xylose.mitemod.fancytoys.FancyToys"
+    ],
+    "modmenu": [
+      "moddedmite.xylose.mitemod.fancytoys.FTModMenu"
+    ]
+  },
+  "mixins": [
+    "FT.mixins.json"
+  ],
+  "accessWidener": "FT.accesswidener"
+}
