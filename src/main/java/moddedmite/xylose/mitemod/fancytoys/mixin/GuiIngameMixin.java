@@ -2,6 +2,7 @@ package moddedmite.xylose.mitemod.fancytoys.mixin;
 
 import moddedmite.xylose.mitemod.fancytoys.gui.PlayerModel;
 import net.minecraft.Gui;
+import net.minecraft.GuiContainer;
 import net.minecraft.GuiIngame;
 import net.minecraft.Minecraft;
 import org.spongepowered.asm.mixin.Final;
@@ -22,7 +23,7 @@ public class GuiIngameMixin extends Gui {
                     target = "Lnet/minecraft/Minecraft;inDevMode()Z",
                     shift = At.Shift.BEFORE)})
     private void renderPlayerModel(float par1, boolean par2, int par3, int par4, CallbackInfo ci) {
-        if (mc.gameSettings.gui_mode == 0 && !mc.gameSettings.keyBindPlayerList.pressed) {
+        if (mc.gameSettings.gui_mode == 0 && !mc.gameSettings.keyBindPlayerList.pressed && !(mc.currentScreen instanceof GuiContainer)) {
             PlayerModel playerModel = new PlayerModel();
             playerModel.renderPlayerModel(this, this.mc);
         }
