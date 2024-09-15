@@ -8,4 +8,5 @@ accessible class net/minecraft/GuiScreenTemporaryResourcePackSelectSelectionList
 accessible method net/minecraft/GuiScreenTemporaryResourcePackSelectSelectionList func_110510_a (Lnet/minecraft/GuiScreenTemporaryResourcePackSelectSelectionList;)Lnet/minecraft/ResourcePackRepository;
 accessible field net/minecraft/GuiScreen mc Lnet/minecraft/Minecraft;
 accessible field net/minecraft/GuiScreen fontRenderer Lnet/minecraft/FontRenderer;
-accessible class net/minecraft/SimpleReloadableResourceManagerINNER1
+accessible field net/minecraft/Minecraft mcResourcePackRepository Lnet/minecraft/ResourcePackRepository;
+accessible field net/minecraft/ResourcePackRepositoryEntry reResourcePack Lnet/minecraft/ResourcePack;

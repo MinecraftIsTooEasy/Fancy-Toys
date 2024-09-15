@@ -12,6 +12,7 @@
     "ItemInWorldManagerMixin",
     "ItemRockMixin",
     "MinecraftMixin",
+    "RenderMixin",
     "ResourceLocationMixin",
     "SimpleReloadableResourceManagerMixin",
     "SoundManagerMixin"
