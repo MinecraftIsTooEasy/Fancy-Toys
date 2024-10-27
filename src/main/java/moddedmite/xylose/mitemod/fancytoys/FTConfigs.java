@@ -2,6 +2,7 @@ package moddedmite.xylose.mitemod.fancytoys;
 
 import fi.dy.masa.malilib.config.SimpleConfigs;
 import fi.dy.masa.malilib.config.options.*;
+import org.lwjgl.opengl.Display;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,6 @@ public class FTConfigs extends SimpleConfigs {
     public static final ConfigInteger MusicDelay = new ConfigInteger("音乐固定间隔", 12000, 1, Integer.MAX_VALUE, false, "");
     public static final ConfigInteger Ooze = new ConfigInteger("灰色史莱姆概率", 100, 1, Integer.MAX_VALUE - 1, false, "");
     public static final ConfigDouble WeatherSound = new ConfigDouble("天气音效大小", 1, 0, 1, true, "");
-
     private static final FTConfigs Instance;
     public static final List<ConfigBase<?>> general;
     public FTConfigs(String name, List<ConfigHotkey> hotkeys, List<?> values) {

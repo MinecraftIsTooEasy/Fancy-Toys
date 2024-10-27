@@ -8,14 +8,8 @@ import java.util.List;
 
 @Mixin(GuiScreenTemporaryResourcePackSelectSelectionList.class)
 public abstract class GuiScreenTemporaryResourcePackSelectSelectionListMixin extends GuiSlot {
-
-    @Unique
-    private Minecraft mc;
-
     @Shadow
     private final ResourcePackRepository field_110511_b;
-    @Shadow
-    private ResourceLocation field_110513_h;
     @Shadow
     final GuiScreenTemporaryResourcePackSelect field_110512_a;
 

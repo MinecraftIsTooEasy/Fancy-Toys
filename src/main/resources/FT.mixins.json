@@ -8,6 +8,8 @@
     "EntityLightningBoltMixin",
     "EntityRendererMixin",
     "EntityXPOrbMixin",
+    "FontRendererMixin",
+    "GameSettingsMixin",
     "GuiIngameMixin",
     "GuiMainMenuMixin",
     "GuiScreenTemporaryResourcePackSelectSelectionListMixin",
@@ -18,7 +20,8 @@
     "ResourceLocationMixin",
     "SimpleReloadableResourceManagerMixin",
     "SoundManagerMixin",
-    "SoundsMITEMixin"
+    "SoundsMITEMixin",
+    "WorldInfoSharedMixin"
   ],
   "injectors": {
     "defaultRequire": 1
